@@ -55,4 +55,10 @@ select max(salary) from employee_payroll where gender='M'
 
 select gender,count(salary) from employee_payroll group by gender
 
-   
+-----UC8-----
+alter table employee_payroll add
+phone varchar(15),
+address varchar(200) default 'India' not null,
+department varchar(20) default 'CS' not null
+
+select * from employee_payroll
