@@ -22,6 +22,14 @@ IF EXISTS (SELECT 1
            AND TABLE_NAME='employee_payroll') 
    SELECT 1 AS res ELSE SELECT 0 AS res;
 
+   ---Uc3-for inserting records ------
+insert into employee_payroll values
+('Bill',10000.0,'2019-01-05'),
+('Terisa',23000.0,'2017-09-10'),
+('Charlie',15000.0,'2018-06-15')
+
+select* from employee_payroll
+
   
    
 
