@@ -36,7 +36,14 @@ select* from employee_payroll
 select salary from employee_payroll where name='Bill'
 -----by using DB functions  and operator
 select name from employee_payroll where start_date between '2018-01-01' and getdate()
+
+----UC6--- alter-> is used to add, delete, or modify columns and add and drop various constraints on an existing table.
+alter table employee_payroll add gender char(1)
+select * from employee_payroll
+
+update employee_payroll set gender='M' where name in ('Bill','Charlie')
+update employee_payroll set gender='F' where name='Terisa'
+select * from employee_payroll
   
-   
 
    
