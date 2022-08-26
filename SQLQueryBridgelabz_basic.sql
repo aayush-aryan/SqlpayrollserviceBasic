@@ -28,6 +28,7 @@ insert into employee_payroll values
 ('Terisa',23000.0,'2017-09-10'),
 ('Charlie',15000.0,'2018-06-15')
 
+---uc4---for retrieve all the data from table-----
 select* from employee_payroll
 
   
