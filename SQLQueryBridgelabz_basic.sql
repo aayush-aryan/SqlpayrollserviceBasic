@@ -31,6 +31,11 @@ insert into employee_payroll values
 ---uc4---for retrieve all the data from table-----
 select* from employee_payroll
 
+----uc5-selecting particular records----
+----by using where clause
+select salary from employee_payroll where name='Bill'
+-----by using DB functions  and operator
+select name from employee_payroll where start_date between '2018-01-01' and getdate()
   
    
 
