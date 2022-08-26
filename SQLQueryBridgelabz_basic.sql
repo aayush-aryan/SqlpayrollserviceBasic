@@ -44,6 +44,15 @@ select * from employee_payroll
 update employee_payroll set gender='M' where name in ('Bill','Charlie')
 update employee_payroll set gender='F' where name='Terisa'
 select * from employee_payroll
-  
+-----UC7--AggregateFunctions------------------
+--getting records by total salary by gender----
+select gender,sum(salary) from employee_payroll group by gender
+--getting records average salary by gender----
+select gender,avg(salary) from employee_payroll group by gender
+--getting records minimum and maximum salary by gender----
+select min(salary) from employee_payroll where gender='M'
+select max(salary) from employee_payroll where gender='M'
+
+select gender,count(salary) from employee_payroll group by gender
 
    
