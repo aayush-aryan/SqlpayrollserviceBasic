@@ -62,3 +62,15 @@ address varchar(200) default 'India' not null,
 department varchar(20) default 'CS' not null
 
 select * from employee_payroll
+--------UC9---------
+alter table employee_payroll add
+basic_pay money,
+deduction money,
+taxable_pay money,
+income_tax money,
+net_pay money
+
+-------------UC10------------
+update employee_payroll set department='sales' where name='Terisa'
+insert into employee_payroll values
+('Terisa',23000.0,'2017-09-11','F',NULL,'India','marketing',null,null,null,null,null)
